@@ -10,6 +10,7 @@
 :root {
   --background-color: #013953;
   --background-img: url("./assets/daniel-leone-v7daTKlZzaw-unsplash.jpg") center;
+  --add-btn-background-color: #03557a;
 }
 
 /* utility */
@@ -37,7 +38,6 @@
 .inner-contrainer {
   width: calc(100% - 80px);
   height: 70vh;
-  /* background-color: rgba(41, 41, 41, 0.3); */
   position: absolute;
   top: 140px;
   left: 40px;
@@ -74,15 +74,20 @@
   padding: 10px;
 }
 
+.input-section input:focus {
+  outline: none;
+}
+
 .input-section span {
   flex-grow: 0;
   width: 25%;
   background-color: black;
   color: white;
-  display: flex;
-  align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-weight: 600;
 }
- 
 
+.input-section span:hover {
+  background-color: var(--add-btn-background-color);
+}
