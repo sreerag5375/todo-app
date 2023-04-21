@@ -63,7 +63,7 @@
 
 .input-section {
   display: flex;
-  margin-block: 40px;
+  margin-block: 40px 24px;
   height: 36px;
 }
 
@@ -91,3 +91,5 @@
 .input-section span:hover {
   background-color: var(--add-btn-background-color);
 }
+
+/*  */
