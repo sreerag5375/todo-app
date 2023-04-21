@@ -1,0 +1,88 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* variables */
+:root {
+  --background-color: #013953;
+  --background-img: url("./assets/daniel-leone-v7daTKlZzaw-unsplash.jpg") center;
+}
+
+/* utility */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: rgb(21, 22, 22);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(6, 50, 70, 1) 90%);
+  position: relative;
+}
+
+.top-img {
+  background: var(--background-img);
+  background-size: cover;
+  width: 100%;
+  height: 38vh;
+  text-align: center;
+}
+
+.inner-contrainer {
+  width: calc(100% - 80px);
+  height: 70vh;
+  /* background-color: rgba(41, 41, 41, 0.3); */
+  position: absolute;
+  top: 140px;
+  left: 40px;
+}
+
+.inner-contrainer .top-bar {
+  justify-content: space-between;
+  color: white;
+}
+
+.top-bar p {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  font-family: "Delicious Handrawn", cursive;
+}
+
+.top-bar .fa-regular {
+  font-size: 16px;
+}
+
+/* input field  starts*/
+
+.input-section {
+  display: flex;
+  margin-block: 40px;
+  height: 36px;
+}
+
+.input-section input {
+  flex-grow: 1;
+  width: 75%;
+  border: none;
+  padding: 10px;
+}
+
+.input-section span {
+  flex-grow: 0;
+  width: 25%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+ 
+
